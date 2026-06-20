@@ -1,14 +1,16 @@
 <!--login page-->
 
 <Body style = "text-align: center;">
+    <form action = "login.php" method = "post">
     <h1>Welcome</h1>
-        <label for="username" >Username: </label>
-        <input type = "text" id = "username" name = "username">
+        <label for="userName" >Username: </label>
+        <input type = "text" id = "userName" name = "userName" required>
         <br><br>
         <label for = "password">Password: </label>
-        <input type = "password" id = "password" name = "password">
+        <input type = "password" id = "password" name = "password" required>
         <br><br>
         <button> login </button>
+    </form>
         <a href = "register.html">
             <button type = "button"> Sign up</button>
         </a>

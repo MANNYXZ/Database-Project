@@ -1,5 +1,6 @@
 
 <?php
+
 $host = "localhost";
 $db = "user-login";
 $username = "root";
@@ -21,8 +22,6 @@ catch(mysqli_sql_exception $e){
 }
 
 
-if($conn){
-    echo "you are connected";
-}
+
 
 ?>
