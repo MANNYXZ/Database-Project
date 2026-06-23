@@ -24,9 +24,15 @@ if(!isset($_SESSION["username"])){
 
     <p>Welcome,<?php echo $_SESSION["username"];?>.</p>
 
+    <a href = "postItem.html">
+        <button type = "button"> Post Item </button>
+    </a>
+
+    <br><br>
+
     <form method="post">
         <button type = "submit" name = "Logout"> Log out </button>
-</form>
+    </form>
 
 </body>
 
