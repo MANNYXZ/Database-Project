@@ -1,5 +1,6 @@
 
 <?php
+session_start();
 include "dbConnect.php";
 
 $username = trim($_POST["userName"]);
@@ -18,7 +19,8 @@ $result = mysqli_stmt_get_result($stmt);
 $user = mysqli_fetch_assoc($result);
 
 if($user && password_verify($password, $user["password"])) {
-    header("location: welcome.html");
+    $_SESSION["username"] = $username;
+    header("location: welcome.php");
     exit();
 }
 else{
