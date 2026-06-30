@@ -1,17 +1,140 @@
-<!--login page-->
+<!DOCTYPE html>
+<html lang="en">
 
-<Body style = "text-align: center;">
-    <form action = "login.php" method = "post">
-    <h1>Welcome</h1>
-        <label for="userName" >Username: </label>
-        <input type = "text" id = "userName" name = "userName" required>
-        <br><br>
-        <label for = "password">Password: </label>
-        <input type = "password" id = "password" name = "password" required>
-        <br><br>
-        <button> login </button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+        }
+
+        .login-box{
+            width:380px;
+            background:white;
+            padding:40px;
+            border-radius:15px;
+            box-shadow:0 20px 40px rgba(0,0,0,.35);
+            text-align:center;
+        }
+
+        h1{
+            margin-bottom:10px;
+            color:#1e293b;
+        }
+
+        p{
+            color:gray;
+            margin-bottom:30px;
+        }
+
+        label{
+            display:block;
+            text-align:left;
+            margin-bottom:5px;
+            font-weight:bold;
+        }
+
+        input{
+            width:100%;
+            padding:12px;
+            margin-bottom:20px;
+            border:1px solid #ccc;
+            border-radius:8px;
+            font-size:15px;
+        }
+
+        input:focus{
+            outline:none;
+            border-color:#2563eb;
+            box-shadow:0 0 8px rgba(37,99,235,.3);
+        }
+
+        button{
+            width:100%;
+            padding:13px;
+            border:none;
+            border-radius:8px;
+            font-size:16px;
+            cursor:pointer;
+            transition:.3s;
+        }
+
+        .login-btn{
+            background:#2563eb;
+            color:white;
+            margin-bottom:15px;
+        }
+
+        .login-btn:hover{
+            background:#1d4ed8;
+            transform:translateY(-2px);
+        }
+
+        .signup-btn{
+            background:#f1f5f9;
+            color:#1e293b;
+        }
+
+        .signup-btn:hover{
+            background:#dbeafe;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+    <h1>Welcome Back</h1>
+    <p>Sign in to continue</p>
+
+    <form action="login.php" method="post">
+
+        <label for="userName">Username</label>
+        <input
+            type="text"
+            id="userName"
+            name="userName"
+            placeholder="Enter your username"
+            required>
+
+        <label for="password">Password</label>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required>
+
+        <button class="login-btn" type="submit">
+            Login
+        </button>
+
     </form>
-        <a href = "register.html">
-            <button type = "button"> Sign up</button>
-        </a>
-</Body>
+
+    <a href="register.html">
+        <button class="signup-btn" type="button">
+            Create Account
+        </button>
+    </a>
+
+</div>
+
+</body>
+
+</html>
