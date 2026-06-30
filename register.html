@@ -1,27 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<body style = "text-align: center;">
-    <form action = register.php method = "post">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
 
-    <h1> Sign Up </h1>
-    <label> Username:</label>
-    <input type = "text" name = "username"><br><br>
-    <label> Password: </label>
-    <input type = "password" name = "password"><br><br>
-    <label> Confirm Password:</label>
-    <input type = "password" name = "confirmpassword"><br><br>
-    <label> First Name:</label>
-    <input type = "text" name = "firstname"><br><br>
-    <label> Last Name:</label>
-    <input type = "text" name = "lastname"><br><br>
-    <label> Email:</label>
-    <input type = "email" name = "email"><br><br>
-    <label> Phone Number:</label>
-    <input type = "text" name = "phonenumber"><br><br>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <button> Sign up</button>
-    </form>
-    <a href = login.html>
-        <button type = "button"> Back</button>
-    </a>
+<body>
+
+    <div class="container">
+
+        <h1>Create Account</h1>
+        <p class="subtitle">Sign up to start posting items.</p>
+
+        <form action="register.php" method="POST">
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Choose a username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+            <label for="confirmpassword">Confirm Password</label>
+            <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm your password" required>
+
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required>
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phonenumber">Phone Number</label>
+            <input type="text" id="phonenumber" name="phonenumber" placeholder="Enter your phone number" required>
+
+            <button class="login-btn" type="submit">
+                Sign Up
+            </button>
+
+        </form>
+
+        <a href="login.html">
+            <button class="back-btn" type="button">
+                ← Back to Login
+            </button>
+        </a>
+
+    </div>
 
 </body>
+
+</html>
