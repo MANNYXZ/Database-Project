@@ -6,3 +6,5 @@ The project folder must go inside, as shown C:\xampp\htdocs\Database-Project
 Start Apache and MySQL through the XAMPP control panel and open this link in your browser http://localhost/Database-Project/login.html
 
 Phase 1 video: https://youtu.be/mkJHeXXtjMU
+
+Phase 2 video: https://youtu.be/k9hHxK3utWE
