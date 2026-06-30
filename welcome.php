@@ -30,6 +30,12 @@ if(!isset($_SESSION["username"])){
 
     <br><br>
 
+<a href="search.html">
+    <button type="button">Search Items</button>
+</a>
+
+    <br><br>
+
     <form method="post">
         <button type = "submit" name = "Logout"> Log out </button>
     </form>
