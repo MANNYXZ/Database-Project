@@ -1,26 +1,101 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+            padding:20px;
+        }
+
+        .container{
+            width:100%;
+            max-width:500px;
+            background:white;
+            border-radius:18px;
+            padding:40px;
+            text-align:center;
+            box-shadow:0 20px 45px rgba(0,0,0,.35);
+            animation:fadeIn .6s ease;
+        }
+
+        @keyframes fadeIn{
+            from{
+                opacity:0;
+                transform:translateY(20px);
+            }
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+
+        h1{
+            color:#1e293b;
+            margin-bottom:15px;
+        }
+
+        p{
+            color:#64748b;
+            font-size:18px;
+            margin-bottom:35px;
+        }
+
+        button{
+            width:100%;
+            padding:14px;
+            border:none;
+            border-radius:10px;
+            background:#2563eb;
+            color:white;
+            font-size:16px;
+            cursor:pointer;
+            transition:.3s;
+        }
+
+        button:hover{
+            background:#1d4ed8;
+            transform:translateY(-2px);
+        }
+
+        a{
+            text-decoration:none;
+        }
+    </style>
+
 </head>
 
-<body style="text-align: center;">
+<body>
 
-    <h1>Login Successful!</h1>
+    <div class="container">
 
-    <p>Welcome to the system.</p>
+        <h1>🎉 Login Successful!</h1>
 
-    <a href="login.html">
-        <button type="button">Log out</button>
-    </a>
+        <p>Welcome to the Marketplace System.</p>
+
+        <a href="login.html">
+            <button type="button">
+                Log Out
+            </button>
+        </a>
+
+    </div>
 
 </body>
 
 </html>
-
-
-
-
-
